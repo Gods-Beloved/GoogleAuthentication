@@ -42,7 +42,7 @@ val activity = LocalContext.current as Activity
         key = signedInState,
         onResultReceived = {
                            idToken ->
-            Log.d("LoginScreen: ","Google Token is ${idToken}")
+            Log.d("LoginScreen: ","Google Token  $idToken")
         },
         onDialogDismissed = {
             loginViewModel.saveSignedInState(false)
